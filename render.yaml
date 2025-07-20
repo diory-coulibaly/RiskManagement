@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: logistic-lag-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run logistic_lag_streamlit.py --server.port 8080 --server.enableCORS false
