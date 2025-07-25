@@ -13,6 +13,10 @@ from sklearn.metrics import (
 import io
 
 st.title("📈 Logistic Regression on GOOG Returns with Lag Analysis")
+# 📷 Quick preview of expected CSV format
+from PIL import Image
+image = Image.open("Goog.JPG")
+st.image(image, caption="CSV Format: Stocks, SP500", use_container_width=True, output_format="JPEG")
 
 st.sidebar.header("Upload Files")
 goog_file = st.sidebar.file_uploader("Upload GOOG CSV (semicolon-separated)", type="csv")
